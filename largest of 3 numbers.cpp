@@ -2,21 +2,16 @@
 using namespace std;
 
 int main() {
-    double num1, num2, num3;
-
+    int a, b, c;
     cout << "Enter three numbers: ";
-    cin >> num1 >> num2 >> num3;
+    cin >> a >> b >> c;
 
-    double largest = num1;
-    if (num2 > largest) {
-        largest = num2;
+    if (a >= b && a >= c) {
+        cout << "Largest: " << a << endl;
+    } else if (b >= a && b >= c) {
+        cout << "Largest: " << b << endl;
+    } else {
+        cout << "Largest: " << c << endl;
     }
-
-    if (num3 > largest) {
-        largest = num3;
-    }
-
-    cout << "The largest number is: " << largest << endl;
-
     return 0;
 }
